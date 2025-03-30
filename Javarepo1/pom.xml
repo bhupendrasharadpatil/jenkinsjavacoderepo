@@ -29,6 +29,7 @@
 		</dependency>
 	</dependencies>
 	<!-- DEMO123 -->
+	<demo1>
 	<build>
 		<plugins>
 			<plugin>
