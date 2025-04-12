@@ -1,4 +1,3 @@
-
 name: Java CI with Maven
 on:
  push:
@@ -12,4 +11,4 @@ jobs:
     - name: Build Java package
       run: mvn clean install -f Javarepo1/pom.xml
 name: SonarCloud Scan
-      run: mvn sonar:sonar -Dsonar.projectKey=bhupnendasharadpatil -Dsonar.organization=bhupnendasharadpatil -Dsonar.host.url=https://sonarcloud.io -Dsonar.branch=main -Dsonar.login=bhupnendasharadpatil -Dsonar.token=1d81e18546e1b1651520c601c8f5f7749342cae3
+      run: mvn sonar:sonar -f Javarepo1/pom.xml -Dsonar.projectKey=bhupnendasharadpatil -Dsonar.organization=bhupnendasharadpatil -Dsonar.branch.name=main -Dsonar.host.url=https://sonarcloud.io  -Dsonar.login=1d81e18546e1b1651520c601c8f5f7749342cae3
